@@ -1,19 +1,129 @@
 
 from numpy import *
+###################################################################
 #Down
-w = array([["W", "W", "W"], ["W", "W", "W"], ["W", "W", "W"]])
+w = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 #Front
-r = array([["R", "R", "R"], ["R", "R", "R"], ["R", "R", "R"]])
+r = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 #Up
-y = array([["Y", "Y", "Y"], ["Y", "Y", "Y"], ["Y", "Y", "Y"]])
+y = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 #Back
-o = array([["O", "O", "O"], ["O", "O", "O"], ["O", "O", "O"]])
+o = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 #Left
-b = array([["B", "B", "B"], ["B", "B", "B"], ["B", "B", "B"]])
+b = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 #Right
-g = array([["G", "G", "G"], ["G", "G", "G"], ["G", "G", "G"]])
+g = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 
+###################################################################
+#Asignar colores a w:
+s = w.size
+i=0
+n=0
+while i < s:
+    i=i+1
+    while n < 3:
+        m=0
+        while m < 3:
+            print("\n\nColor [",n,",",m,"] de la cara blanca:")
+            color = str(input())
+            w[n,m]= color
+            m=m+1
+        n=n+1
 
+###################################################################
+#Asignar colores a r:
+s = r.size
+i=0
+n=0
+while i < s:
+    i=i+1
+    while n < 3:
+        m=0
+        while m < 3:
+            print("\n\nColor [",n,",",m,"] de la cara roja:")
+            color = str(input())
+            r[n,m]= color
+            m=m+1
+        n=n+1
+
+###################################################################
+#Asignar colores a y:
+s = y.size
+i=0
+n=0
+while i < s:
+    i=i+1
+    while n < 3:
+        m=0
+        while m < 3:
+            print("\n\nColor [",n,",",m,"] de la cara amarilla:")
+            color = str(input())
+            y[n,m]= color
+            m=m+1
+        n=n+1
+
+###################################################################
+#Asignar colores a o:
+s = o.size
+i=0
+n=0
+while i < s:
+    i=i+1
+    while n < 3:
+        m=0
+        while m < 3:
+            print("\n\nColor [",n,",",m,"] de la cara naranja:")
+            color = str(input())
+            o[n,m]= color
+            m=m+1
+        n=n+1
+
+###################################################################
+#Asignar colores a b:
+s = b.size
+i=0
+n=0
+while i < s:
+    i=i+1
+    while n < 3:
+        m=0
+        while m < 3:
+            print("\n\nColor [",n,",",m,"] de la cara azul:")
+            color = str(input())
+            b[n,m]= color
+            m=m+1
+        n=n+1
+
+###################################################################
+#Asignar colores a g:
+s = g.size
+i=0
+n=0
+while i < s:
+    i=i+1
+    while n < 3:
+        m=0
+        while m < 3:
+            print("\n\nColor [",n,",",m,"] de la cara verde:")
+            color = str(input())
+            g[n,m]= color
+            m=m+1
+        n=n+1
+        
+###################################################################
+print("\n\nLa cara blanca (w) es:")    
+print(w)
+print("\n\nLa cara roja (r) es:")    
+print(r)
+print("\n\nLa cara amarilla (y) es:")    
+print(y)
+print("\n\nLa cara naranja (o) es:")    
+print(o)
+print("\n\nLa cara azul (b) es:")    
+print(b)
+print("\n\nLa cara verde (g) es:")    
+print(g)
+###################################################################
 
 x = str(input("\n\nMovimiento: "))
 
