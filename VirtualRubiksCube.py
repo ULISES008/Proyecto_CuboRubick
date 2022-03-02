@@ -13,7 +13,6 @@ o = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 b = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
 #Right
 g = array([["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]])
-
 ###################################################################
 #Asignar colores a w:
 s = w.size
@@ -29,7 +28,6 @@ while i < s:
             w[n,m]= color
             m=m+1
         n=n+1
-
 ###################################################################
 #Asignar colores a r:
 s = r.size
@@ -45,7 +43,6 @@ while i < s:
             r[n,m]= color
             m=m+1
         n=n+1
-
 ###################################################################
 #Asignar colores a y:
 s = y.size
@@ -61,7 +58,6 @@ while i < s:
             y[n,m]= color
             m=m+1
         n=n+1
-
 ###################################################################
 #Asignar colores a o:
 s = o.size
@@ -77,7 +73,6 @@ while i < s:
             o[n,m]= color
             m=m+1
         n=n+1
-
 ###################################################################
 #Asignar colores a b:
 s = b.size
@@ -93,7 +88,6 @@ while i < s:
             b[n,m]= color
             m=m+1
         n=n+1
-
 ###################################################################
 #Asignar colores a g:
 s = g.size
@@ -109,82 +103,121 @@ while i < s:
             g[n,m]= color
             m=m+1
         n=n+1
-        
 ###################################################################
-print("\n\nLa cara blanca (w) es:")    
-print(w)
-print("\n\nLa cara roja (r) es:")    
-print(r)
-print("\n\nLa cara amarilla (y) es:")    
-print(y)
-print("\n\nLa cara naranja (o) es:")    
-print(o)
-print("\n\nLa cara azul (b) es:")    
-print(b)
-print("\n\nLa cara verde (g) es:")    
-print(g)
-###################################################################
-
-x = str(input("\n\nMovimiento: "))
-
-if x == "r":
-    
+print("\n\nLa cara blanca (w) es:\n", w)    
+print("\n\nLa cara roja (r) es:\n", r)  
+print("\n\nLa cara amarilla (y) es:\n", y) 
+print("\n\nLa cara naranja (o) es:\n", o)  
+print("\n\nLa cara azul (b) es:\n", b)  
+print("\n\nLa cara verde (g) es:\n", g)   
+##############################################################################################
+#Registro de movimientos del Cubo:
+movimiento = ""
+while movimiento != "terminar":
+    movimiento = str(input("\n\nMovimiento: "))
     wx = array(w)
     rx = array(r)
     yx = array(y)
     ox = array(o)
     bx = array(b)
     gx = array(g)
+    #######################
+    if movimiento == "u":
+        r[0,0]= gx[0,0]
+        r[0,1]= gx[0,1]
+        r[0,2]= gx[0,2]
     
-    w[0,2]= ox[0,2]
-    w[1,2]= ox[1,2]
-    w[2,2]= ox[2,2]
+        y[0,0]= yx[2,0]
+        y[0,1]= yx[1,0]
+        y[0,2]= yx[0,0]
+        y[1,0]= yx[2,1]
+        y[1,2]= yx[0,1]
+        y[2,0]= yx[2,2]
+        y[2,1]= yx[1,2]
+        y[2,2]= yx[0,2]
     
-    r[0,2]= wx[0,2]
-    r[1,2]= wx[1,2]
-    r[2,2]= wx[2,2]
-    
-    y[0,2]= rx[0,2]
-    y[1,2]= rx[1,2]
-    y[2,2]= rx[2,2]
-    
-    o[0,2]= yx[0,2]
-    o[1,2]= yx[1,2]
-    o[2,2]= yx[2,2]
+        o[2,0]= bx[0,2]
+        o[2,1]= bx[0,1]
+        o[2,2]= bx[0,0]
 
-    b[0,0]= bx[0,0]
-    b[0,1]= bx[0,1]
-    b[0,2]= bx[0,2]
-    b[1,0]= bx[1,0]
-    b[1,2]= bx[1,2]
-    b[2,0]= bx[2,0]
-    b[2,1]= bx[2,1]
-    b[2,2]= bx[2,2]
+        b[0,0]= rx[0,0]
+        b[0,1]= rx[0,1]
+        b[0,2]= rx[0,2]
 
-    g[0,0]= gx[2,0]
-    g[0,1]= gx[1,0]
-    g[0,2]= gx[0,0]
-    g[1,0]= gx[2,1]
-    g[1,2]= gx[0,1]
-    g[2,0]= gx[2,2]
-    g[2,1]= gx[1,2]
-    g[2,2]= gx[0,2]
+        g[0,0]= ox[0,0]
+        g[0,1]= ox[0,1]
+        g[0,2]= ox[0,2]
+    #######################
+    elif movimiento == "up":
+        x
+    #######################
+    elif movimiento == "d":
+        x
+    #######################
+    elif movimiento == "dp":
+        x
+    #######################
+    elif movimiento == "f":
+        x
+    #######################
+    elif movimiento == "fp":
+        x
+    #######################
+    elif movimiento == "b":
+        x
+    #######################
+    elif movimiento == "bp":
+        x
+    #######################        
+    elif movimiento == "r":
+        w[0,2]= ox[0,2]
+        w[1,2]= ox[1,2]
+        w[2,2]= ox[2,2]
+    
+        r[0,2]= wx[0,2]
+        r[1,2]= wx[1,2]
+        r[2,2]= wx[2,2]
+    
+        y[0,2]= rx[0,2]
+        y[1,2]= rx[1,2]
+        y[2,2]= rx[2,2]
+    
+        o[0,2]= yx[0,2]
+        o[1,2]= yx[1,2]
+        o[2,2]= yx[2,2]
 
-    print("\n\n ")
+        g[0,0]= gx[2,0]
+        g[0,1]= gx[1,0]
+        g[0,2]= gx[0,0]
+        g[1,0]= gx[2,1]
+        g[1,2]= gx[0,1]
+        g[2,0]= gx[2,2]
+        g[2,1]= gx[1,2]
+        g[2,2]= gx[0,2]
+    #######################      
+    elif movimiento == "rp":
+        x
+    #######################
+    elif movimiento == "l":
+        x
+    #######################
+    elif movimiento == "lp":
+        x
+    #######################
+    else:
+      print("\n\nMovimiento no valido, si ya terminaste escribe (terminar)") 
+
+    print("\n\n Caras anteriores")
     print(wx)
     print(rx)
     print(yx)
     print(ox)
     print(bx)
     print(gx)
-    print("\n\n ")
-    print(w)
-    print(r)
-    print(y)
-    print(o)
-    print(b)
-    print(g)
-    
-else:
-    print("no")
-    
+    print("\n\nLa cara blanca (w) es:\n", w)    
+    print("\n\nLa cara roja (r) es:\n", r)  
+    print("\n\nLa cara amarilla (y) es:\n", y) 
+    print("\n\nLa cara naranja (o) es:\n", o)  
+    print("\n\nLa cara azul (b) es:\n", b)  
+    print("\n\nLa cara verde (g) es:\n", g)   
+       
