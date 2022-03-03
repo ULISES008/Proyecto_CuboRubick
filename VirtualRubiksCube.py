@@ -320,6 +320,12 @@ def left_prima():
 movimiento = ""
 while movimiento != "terminar":
     movimiento = str(input("\n\nMovimiento: "))
+    wx = array(w)
+    rx = array(r)
+    yx = array(y)
+    ox = array(o)
+    bx = array(b)
+    gx = array(g)
     #######################
     if movimiento == "u":
         up()
