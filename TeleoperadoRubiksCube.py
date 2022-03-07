@@ -16,13 +16,6 @@ blue = array([["b", "b", "b"], ["b", "b", "b"], ["b", "b", "b"]])
 #Right
 green = array([["g", "g", "g"], ["g", "g", "g"], ["g", "g", "g"]])
 ###################################################################
-whitex = array(white)
-redx = array(red)
-yellowx = array(yellow)
-orangex = array(orange)
-bluex = array(blue)
-greenx = array(green)
-###################################################################
 VirtualRubiksCube.registro(white, "blanco")
 VirtualRubiksCube.registro(red, "rojo")
 VirtualRubiksCube.registro(yellow, "amarillo")
