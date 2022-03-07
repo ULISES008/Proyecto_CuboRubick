@@ -1,4 +1,5 @@
 import VirtualRubiksCube
+import AlgoritmosRubiksCube
 from numpy import *
 
 ###################################################################r
