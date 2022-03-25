@@ -15,7 +15,7 @@ orange = array([["o", "o", "o"], ["o", "o", "o"], ["o", "o", "o"]])
 blue = array([["b", "b", "b"], ["b", "b", "b"], ["b", "b", "b"]])
 #Right
 green = array([["g", "g", "g"], ["g", "g", "g"], ["g", "g", "g"]])
-###################################################################
+"""###################################################################
 VirtualRubiksCube.registro(white, "blanco")
 VirtualRubiksCube.registro(red, "rojo")
 VirtualRubiksCube.registro(yellow, "amarillo")
@@ -23,4 +23,6 @@ VirtualRubiksCube.registro(orange, "naranja")
 VirtualRubiksCube.registro(blue, "azul")
 VirtualRubiksCube.registro(green, "verde")
 ##############################################################################################
-VirtualRubiksCube.registro_movimientos(white, red, yellow, orange, blue, green)
+VirtualRubiksCube.registro_movimientos(white, red, yellow, orange, blue, green)"""
+##############################################################################################
+AlgoritmosRubiksCube.pz_blanco_rojo(white, red, yellow, orange, blue, green)
