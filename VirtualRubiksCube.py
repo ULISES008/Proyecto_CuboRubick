@@ -380,6 +380,6 @@ def registro_movimientos(w, r, y, o, b, g):
     print("\n\nLa cara blanca (w) es:\n", w)    
     print("\n\nLa cara roja (r) es:\n", r)  
     print("\n\nLa cara amarilla (y) es:\n", y) 
-    print("\n\nLa cara naranja (o) es:\n", o)  
+    print("\n\nLa cara naranja (o) es:\n", o)
     print("\n\nLa cara azul (b) es:\n", b)  
-    print("\n\nLa cara verde (g) es:\n", g) 
+    print("\n\nLa cara verde (g) es:\n", g)
