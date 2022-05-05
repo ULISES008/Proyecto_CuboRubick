@@ -1,8 +1,7 @@
 import VirtualRubiksCube
 import AlgoritmosRubiksCube
 from numpy import *
-
-###################################################################r
+"""###################################################################r
 #Down
 white = array([["w", "w", "w"], ["w", "w", "w"], ["w", "w", "w"]])
 #Front
@@ -15,7 +14,23 @@ orange = array([["o", "o", "o"], ["o", "o", "o"], ["o", "o", "o"]])
 blue = array([["b", "b", "b"], ["b", "b", "b"], ["b", "b", "b"]])
 #Right
 green = array([["g", "g", "g"], ["g", "g", "g"], ["g", "g", "g"]])
-"""###################################################################
+###################################################################"""
+
+
+###################################################################r
+#Down
+white = array([["o", "w", "w"], ["r", "w", "g"], ["w", "w", "w"]])
+#Front
+red = array([["r", "r", "r"], ["r", "r", "r"], ["r", "r", "r"]])
+#Up
+yellow = array([["y", "y", "y"], ["y", "y", "y"], ["y", "y", "y"]])
+#Back
+orange = array([["o", "o", "o"], ["o", "o", "o"], ["o", "o", "o"]])
+#Left
+blue = array([["b", "b", "b"], ["b", "b", "b"], ["b", "b", "b"]])
+#Right
+green = array([["g", "g", "g"], ["g", "g", "g"], ["g", "g", "g"]])
+###################################################################
 VirtualRubiksCube.registro(white, "blanco")
 VirtualRubiksCube.registro(red, "rojo")
 VirtualRubiksCube.registro(yellow, "amarillo")
@@ -23,6 +38,8 @@ VirtualRubiksCube.registro(orange, "naranja")
 VirtualRubiksCube.registro(blue, "azul")
 VirtualRubiksCube.registro(green, "verde")
 ##############################################################################################
-VirtualRubiksCube.registro_movimientos(white, red, yellow, orange, blue, green)"""
+"""VirtualRubiksCube.registro_movimientos(white, red, yellow, orange, blue, green)"""
 ##############################################################################################
 AlgoritmosRubiksCube.pz_blanco_rojo(white, red, yellow, orange, blue, green)
+AlgoritmosRubiksCube.pz_blanco_verde(white, red, yellow, orange, blue, green)
+AlgoritmosRubiksCube.pz_blanco_naranja(white, red, yellow, orange, blue, green)
